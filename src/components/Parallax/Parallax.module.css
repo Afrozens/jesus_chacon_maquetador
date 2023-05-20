@@ -6,49 +6,33 @@
 
 .container div {
     display: flex;
-    gap: .5rem;
-    margin-bottom: .5rem;
+    gap: .7rem;
+    rotate: -25deg;
+    margin-bottom: .7rem;
 }
 
 .container img {
-    width: 166px;
+    width: 160px;
     height: 193px;
     position: relative;
     border-radius: 13px;
+    bottom: 5rem;
+    margin-bottom: .7rem;
 }
 
-.container img:nth-child(2n) {
-    top: -2rem;
-}
 
-.container img:nth-child(2n+1) {
-    top: -8rem;
-}
-
-.container img:nth-child(3n+0) {
-    top: -4rem;
-}
 
 @media screen and (min-width: 768px) {
     .container div {
         gap: 1rem;
-        margin-bottom: 1rem;
+        margin-top: 2rem;
     }
 
     .container img {
         width: 302px;
         height: 350px;
+        bottom: 20rem;
+        margin-top: 1rem;
     }
     
-    .container img:nth-child(2n) {
-        top: -4rem;
-    }
-    
-    .container img:nth-child(2n+1) {
-        top: -6rem;
-    }
-    
-    .container img:nth-child(3n+0) {
-        top: -8rem;
-    }
 }

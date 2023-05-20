@@ -14,13 +14,19 @@ const Parallax = () => {
           alt="image of multiples brushes"
         />
         <img
-          src="../src/assets/parallax/imgThree.svg"
+          src="../src/assets/parallax/imgNine.svg"
           alt="image of multiples brushes"
         />
         <img
           data-scroll
           data-scroll-speed="3"
           src="../src/assets/parallax/imgThree.svg"
+          alt="image of multiples brushes"
+        />
+        <img
+          data-scroll
+          data-scroll-speed="3"
+          src="../src/assets/parallax/imgEight.svg"
           alt="image of multiples brushes"
         />
       </div>
@@ -41,6 +47,12 @@ const Parallax = () => {
           src="../src/assets/parallax/imgFive.svg"
           alt="image of multiples brushes"
         />
+        <img
+          data-scroll
+          data-scroll-speed="3"
+          src="../src/assets/parallax/imgThree.svg"
+          alt="image of multiples brushes"
+        />
       </div>
       <div>
         <img
@@ -49,6 +61,10 @@ const Parallax = () => {
         />
         <img
           src="../src/assets/parallax/imgEight.svg"
+          alt="image of multiples brushes"
+        />
+        <img
+          src="../src/assets/parallax/imgFive.svg"
           alt="image of multiples brushes"
         />
         <img
