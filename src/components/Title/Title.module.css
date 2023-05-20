@@ -1,0 +1,27 @@
+.title {
+  margin-top: 27px;
+  font-weight: bold;
+  font-size: var(--size-secundary);
+  line-height: 49px;
+  font-family: var(--family-montserrat);
+}
+
+.titleCenter {
+  text-align: center;
+  line-height: 49px;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    width: 500px;
+    margin-top: 64px;
+    font-size: var(--size-primary);
+    line-height: 78px;
+  }
+}
+
+@media screen and (min-device-width: 1200px) {
+  title {
+    margin-top: 0;
+  }
+}

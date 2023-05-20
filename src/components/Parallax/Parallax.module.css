@@ -1,0 +1,54 @@
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container div {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+.container img {
+    width: 166px;
+    height: 193px;
+    position: relative;
+    border-radius: 13px;
+}
+
+.container img:nth-child(2n) {
+    top: -2rem;
+}
+
+.container img:nth-child(2n+1) {
+    top: -8rem;
+}
+
+.container img:nth-child(3n+0) {
+    top: -4rem;
+}
+
+@media screen and (min-width: 768px) {
+    .container div {
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .container img {
+        width: 302px;
+        height: 350px;
+    }
+    
+    .container img:nth-child(2n) {
+        top: -4rem;
+    }
+    
+    .container img:nth-child(2n+1) {
+        top: -6rem;
+    }
+    
+    .container img:nth-child(3n+0) {
+        top: -8rem;
+    }
+}

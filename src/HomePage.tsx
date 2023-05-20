@@ -1,5 +1,5 @@
 import React from "react";
-import {Header} from "./components";
+import {Header, Paragraph, Parallax, Title} from "./components";
 
 const HomePage = () => {
   return (
@@ -12,19 +12,30 @@ const HomePage = () => {
           className="main-avatar"
         />
         <article>
-          <h1 className="main-title">
+          <Title>
             Disfruta de la <b>mejor música</b>
-          </h1>
-          <p className="main-subtitle">
+          </Title>
+          <Paragraph>
             Accede a tu cuenta para guardar tus albumes favoritos.
-          </p>
+          </Paragraph>
           <button className="main-btn">
             Contacta
             <img src="/arrow-left.svg" alt="arrow white left" />
           </button>
         </article>
       </main>
-      <section className="slider">sd</section>
+
+      <section className="sectionParallax">
+        <Parallax />
+      </section>
+
+      <section className="sectionAlbum">
+        <Title isCenter={true}>Los mas escuchados</Title>
+        <Paragraph isCenter={true}>
+          Disfruta de tu música a un solo click y descube que discos has
+          guardado dentro de “mis álbumes”
+        </Paragraph>
+      </section>
     </>
   );
 };

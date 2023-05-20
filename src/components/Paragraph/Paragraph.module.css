@@ -1,0 +1,18 @@
+.paragraph {
+  margin: 38px 0;
+  line-height: 20px;
+  opacity: .8;
+  font-family: var(--family-montserrat);
+}
+
+.paragraphCenter {
+  text-align: center;
+  line-height: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .paragraph {
+    margin-bottom: 100px;
+    width: 347px;
+  }
+}

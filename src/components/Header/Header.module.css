@@ -4,7 +4,7 @@
     padding: 30px 24px;
 }
 
-.header > h2 {
+.header > h1 {
     font-size: var(--size-terniary);
     color: #FFF;
     font-weight: 700;
