@@ -19,7 +19,7 @@ const HomePage = () => {
             Accede a tu cuenta para guardar tus albumes favoritos.
           </Paragraph>
           <button className="main-btn">
-            Contacta
+            <a href="#footer">Contacta</a>
             <img src="/arrow-left.svg" alt="arrow white left" />
           </button>
         </article>
@@ -38,7 +38,7 @@ const HomePage = () => {
         <CardSlider />
       </section>
 
-      <footer className="footer">
+      <footer id="footer" className="footer">
         <article>
           <Title>
             Disfruta de la <b>mejor música</b>

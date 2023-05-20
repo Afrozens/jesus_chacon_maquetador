@@ -15,12 +15,9 @@
     width: 160px;
     height: 193px;
     position: relative;
-    border-radius: 13px;
-    bottom: 5rem;
+    border-radius: 24px;
     margin-bottom: .7rem;
 }
-
-
 
 @media screen and (min-width: 768px) {
     .container div {
@@ -31,8 +28,7 @@
     .container img {
         width: 302px;
         height: 350px;
-        bottom: 20rem;
         margin-top: 1rem;
+        top: -20rem;
     }
-    
 }
