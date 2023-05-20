@@ -1,0 +1,21 @@
+.header {
+    height: 5rem;
+    width: 100vw;
+    padding: 30px 24px;
+}
+
+.header > h2 {
+    font-size: var(--size-terniary);
+    color: #FFF;
+    font-weight: 700;
+    font-family: var(--family-montserrat);
+    line-height: 2rem;
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 30px 80px;
+    }
+}
