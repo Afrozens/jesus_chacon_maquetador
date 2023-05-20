@@ -18,6 +18,8 @@ const Parallax = () => {
           alt="image of multiples brushes"
         />
         <img
+          data-scroll
+          data-scroll-speed="3"
           src="../src/assets/parallax/imgThree.svg"
           alt="image of multiples brushes"
         />

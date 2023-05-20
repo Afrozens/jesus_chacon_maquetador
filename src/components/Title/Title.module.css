@@ -21,7 +21,7 @@
 }
 
 @media screen and (min-device-width: 1200px) {
-  title {
+  .title {
     margin-top: 0;
   }
 }

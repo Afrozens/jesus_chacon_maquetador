@@ -1,5 +1,5 @@
 import React from "react";
-import {Header, Paragraph, Parallax, Title} from "./components";
+import {CardSlider, Header, Paragraph, Parallax, Title} from "./components";
 
 const HomePage = () => {
   return (
@@ -25,17 +25,30 @@ const HomePage = () => {
         </article>
       </main>
 
-      <section className="sectionParallax">
+      <section className="section-parallax">
         <Parallax />
       </section>
 
-      <section className="sectionAlbum">
+      <section className="section-album">
         <Title isCenter={true}>Los mas escuchados</Title>
         <Paragraph isCenter={true}>
           Disfruta de tu música a un solo click y descube que discos has
           guardado dentro de “mis álbumes”
         </Paragraph>
+        <CardSlider />
       </section>
+
+      <footer className="footer">
+        <article>
+          <Title>
+            Disfruta de la <b>mejor música</b>
+          </Title>
+          <p className="footer-paragraph">
+            Escríbenos en el siguiente formulario y un asesor se pondrá en
+            contacto contigo.
+          </p>
+        </article>
+      </footer>
     </>
   );
 };
