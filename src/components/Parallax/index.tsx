@@ -4,7 +4,7 @@ import {useScroll, useTransform, motion} from "framer-motion";
 import type {MotionValue} from "framer-motion";
 
 const useParallax = (value: MotionValue<number>, distance: number) => {
-  return useTransform(value, [0, 1], [-distance, "-400"]);
+  return useTransform(value, [0, 1], [-distance, "-350"]);
 };
 
 const Parallax = () => {

@@ -6,8 +6,6 @@ interface PropsType {
 }
 
 const CardSlider = ({image, isLoading}: PropsType) => {
-  console.log(image);
-  console.log(isLoading);
   return (
     <div className={styles.card}>
       <img
