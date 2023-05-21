@@ -1,5 +1,5 @@
 import React from "react";
-import {CardSlider, Header, Paragraph, Parallax, Title} from "./components";
+import {Header, Paragraph, Parallax, Slider, Title} from "./components";
 
 const HomePage = () => {
   return (
@@ -35,7 +35,7 @@ const HomePage = () => {
           Disfruta de tu música a un solo click y descube que discos has
           guardado dentro de “mis álbumes”
         </Paragraph>
-        <CardSlider />
+        <Slider />
       </section>
 
       <footer id="footer" className="footer">

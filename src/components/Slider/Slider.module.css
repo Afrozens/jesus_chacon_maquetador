@@ -1,0 +1,90 @@
+.containerSlider {
+  position: relative;
+  width: 322px;
+  height: 367px;
+}
+
+.containerSlider > img {
+  width: 272px;
+  height: 241px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 24px;
+  object-fit: cover;
+  z-index: 2;
+  opacity: 0.3;
+}
+
+.containerSlider > button {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 999;
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+}
+
+button:hover {
+  opacity: 0.8;
+  scale: 115%;
+}
+
+button:active {
+  opacity: 1;
+  scale: 95%;
+}
+
+.btnNext {
+  left: -15%;
+}
+
+.btnPrevious {
+  right: -15%;
+}
+
+.imgNext {
+  left: 50%;
+}
+
+.imgPrevious {
+  right: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .btnNext {
+    left: -30%;
+  }
+
+  .btnPrevious {
+    right: -30%;
+  }
+
+  .imgNext {
+    left: 130%;
+  }
+
+  .imgPrevious {
+    right: 130%;
+  }
+}
+
+@media screen and (min-device-width: 1200px) {
+  .btnNext {
+    left: -70%;
+  }
+
+  .btnPrevious {
+    right: -70%;
+  }
+
+  .imgNext {
+    left: 170%;
+  }
+
+  .imgPrevious {
+    right: 170%;
+  }
+}

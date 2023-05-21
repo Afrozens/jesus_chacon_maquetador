@@ -1,17 +1,24 @@
 import React from "react";
 import styles from "./CardSlider.module.css";
+interface PropsType {
+  image: string;
+  isLoading: boolean;
+}
 
-const index = () => {
+const CardSlider = ({image, isLoading}: PropsType) => {
+  console.log(image);
+  console.log(isLoading);
   return (
     <div className={styles.card}>
       <img
-        src="../src/assets/slider/imgOne.svg"
-        alt="image of multiples brushes"
+        src={`../src/assets/slider/${image}`}
+        alt="image of album of music"
+        className={`${isLoading ? "opacity-medium" : "opacity-complete"}`}
       />
       <h5>albumName</h5>
-      <h6>Publicado: asdas</h6>
+      <h6>Publicado: date</h6>
     </div>
   );
 };
 
-export default index;
+export default CardSlider;

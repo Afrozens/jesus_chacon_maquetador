@@ -1,7 +1,8 @@
-export {default as CardSlider} from "./CardSlider";
-export {default as Form} from "./Form";
-export {default as Header} from "./Header";
-export {default as Paragraph} from "./Paragraph";
-export {default as Parallax} from "./Parallax";
-export {default as Title} from "./Title";
-export * from "./index";
+export { default as CardSlider } from './CardSlider';
+export { default as Form } from './Form';
+export { default as Header } from './Header';
+export { default as Paragraph } from './Paragraph';
+export { default as Parallax } from './Parallax';
+export { default as Slider } from './Slider';
+export { default as Title } from './Title';
+export * from './index';
