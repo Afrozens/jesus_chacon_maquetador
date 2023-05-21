@@ -1,9 +1,11 @@
-import React from "react";
 import styles from "./Title.module.css";
 
 const Title = ({children, isCenter}: TextType) => {
   return (
-    <h2 className={`${styles.title} ${isCenter && styles.titleCenter}`}>
+    <h2
+      className={`${styles.title} ${
+        isCenter ?? false ? styles.titleCenter : styles.titleLeft
+      }`}>
       {children}
     </h2>
   );

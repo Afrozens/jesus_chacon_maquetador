@@ -1,10 +1,10 @@
-import React, {useRef} from "react";
+import {useRef} from "react";
 import styles from "./Parallax.module.css";
 import {useScroll, useTransform, motion} from "framer-motion";
 import type {MotionValue} from "framer-motion";
 
 const useParallax = (value: MotionValue<number>, distance: number) => {
-  return useTransform(value, [0, 1], [-distance, "-400"]);
+  return useTransform(value, [0, 1], [-distance, "-350"]);
 };
 
 const Parallax = () => {

@@ -3,6 +3,11 @@
   line-height: 20px;
   opacity: .8;
   font-family: var(--family-montserrat);
+  font-weight: 400;
+}
+
+.paragraphLeft {
+  text-align: start;
 }
 
 .paragraphCenter {

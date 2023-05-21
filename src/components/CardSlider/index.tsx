@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./CardSlider.module.css";
 interface PropsType {
   image: string;
@@ -6,8 +5,6 @@ interface PropsType {
 }
 
 const CardSlider = ({image, isLoading}: PropsType) => {
-  console.log(image);
-  console.log(isLoading);
   return (
     <div className={styles.card}>
       <img

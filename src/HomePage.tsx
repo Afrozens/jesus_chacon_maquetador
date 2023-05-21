@@ -1,5 +1,5 @@
-import React from "react";
-import {Header, Paragraph, Parallax, Slider, Title} from "./components";
+import {Form, Header, Paragraph, Parallax, Slider, Title} from "./components";
+import {Toaster} from "react-hot-toast";
 
 const HomePage = () => {
   return (
@@ -48,7 +48,9 @@ const HomePage = () => {
             contacto contigo.
           </p>
         </article>
+        <Form />
       </footer>
+      <Toaster position="bottom-center" reverseOrder={false} />
     </>
   );
 };

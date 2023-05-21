@@ -6,9 +6,12 @@
   font-family: var(--family-montserrat);
 }
 
+.titleLeft {
+  text-align: start;
+}
+
 .titleCenter {
   text-align: center;
-  line-height: 49px;
 }
 
 @media screen and (min-width: 768px) {

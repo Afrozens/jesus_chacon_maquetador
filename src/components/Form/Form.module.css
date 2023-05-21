@@ -1,0 +1,130 @@
+.form {
+  width: 344px;
+  height: 493px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerInput {
+  position: relative;
+  width: 100%;
+  margin-top: 56px;
+  align-self: flex-start;
+}
+
+.containerInput input {
+  width: 100%;
+  font-size: var(--size-terniary);
+  font-family: var(--family-helvetica);
+  font-weight: 300;
+  line-height: 29px;
+  border: none;
+  border-bottom: 2px solid #222;
+  padding: 20px 0;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+}
+
+.containerInput .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.containerInput input:focus ~ .underline,
+.containerInput input:valid ~ .underline {
+  transform: scaleX(1);
+}
+
+.select,
+option {
+  width: 100%;
+  height: 40px;
+  margin-top: 56px;
+  font-family: var(--family-helvetica);
+  font-weight: 300;
+  font-size: var(--size-terniary);
+  background-color: var(--color-primary);
+  border: 0;
+  color: #6d6d6d;
+  outline: none;
+  cursor: pointer;
+}
+
+.select > option {
+  color: var(--color-terniary);
+}
+
+option:disabled {
+  background-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.condition {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 100px;
+    color: var(--color-terniary);
+    font-family: var(--family-helvetica);
+    line-height: 26px;
+    align-self: flex-start;
+}
+
+.condition label {
+    opacity: .5;
+}
+
+.condition a {
+    text-decoration: underline;
+}
+
+.condition > input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    appearance: none;
+    margin: 0;
+    font: inherit;
+    color: #fff;
+    background-color: var(--color-primary);
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.condition > input[type="checkbox"]:checked {
+    content: "";
+  background-color: var(--color-secundary);
+}
+
+.submit {
+    margin-top: 60px;
+    align-self: flex-end;
+    font-family: var(--family-helvetica);
+    font-size: var(--size-terniary);
+    line-height: 29px;
+    cursor: pointer;
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    width: 516px;
+  }
+}
+
+@media screen and (min-device-width: 1200px) {
+  .form {
+    margin: 0;
+  }
+
+  .containerInput:first-child {
+    margin-top: 0;
+  }
+}

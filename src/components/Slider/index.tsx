@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import CardSlider from "../CardSlider";
 import styles from "./Slider.module.css";
 

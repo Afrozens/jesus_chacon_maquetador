@@ -1,7 +1,16 @@
 .opacity-medium {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .opacity-complete {
-    opacity: 1;
+  opacity: 1;
+}
+
+.error {
+  margin-top: 5px;
+  color: #ff7777;
+}
+
+.error-input {
+  color: #ff7777 !important;
 }
