@@ -1,4 +1,3 @@
-import React from "react";
 import {Form, Header, Paragraph, Parallax, Slider, Title} from "./components";
 import {Toaster} from "react-hot-toast";
 

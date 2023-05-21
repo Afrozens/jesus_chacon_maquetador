@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import {useRef} from "react";
 import styles from "./Parallax.module.css";
 import {useScroll, useTransform, motion} from "framer-motion";
 import type {MotionValue} from "framer-motion";
@@ -18,100 +18,92 @@ const Parallax = () => {
     <div className={styles.container} ref={scrollRef}>
       <motion.div style={{y}}>
         <img
-          src="../src/assets/parallax/imgOne.svg"
+          src="/assets/parallax/imgOne.svg"
           alt="image of multiples brushes"
         />
         <img
-          src="../src/assets/parallax/imgTwo.svg"
+          src="/assets/parallax/imgTwo.svg"
           alt="image of multiples brushes"
         />
         <img
-          src="../src/assets/parallax/imgNine.svg"
+          src="/assets/parallax/imgNine.svg"
           alt="image of multiples brushes"
         />
         <img
-          data-scroll
-          data-scroll-speed="3"
-          src="../src/assets/parallax/imgThree.svg"
+          src="/assets/parallax/imgThree.svg"
           alt="image of multiples brushes"
         />
         <img
-          data-scroll
-          data-scroll-speed="3"
-          src="../src/assets/parallax/imgEight.svg"
+          src="/assets/parallax/imgEight.svg"
           alt="image of multiples brushes"
         />
       </motion.div>
 
       <motion.div style={{y}}>
         <img
-          src="../src/assets/parallax/imgFour.svg"
+          src="/assets/parallax/imgFour.svg"
           alt="image of multiples brushes"
         />
         <img
-          src="../src/assets/parallax/imgFive.svg"
+          src="/assets/parallax/imgFive.svg"
           alt="image of multiples brushes"
         />
         <img
-          src="../src/assets/parallax/imgSix.svg"
+          src="/assets/parallax/imgSix.svg"
           alt="image of multiples brushes"
         />
         <img
-          src="../src/assets/parallax/imgFive.svg"
+          src="/assets/parallax/imgFive.svg"
           alt="image of multiples brushes"
         />
         <img
-          data-scroll
-          data-scroll-speed="3"
-          src="../src/assets/parallax/imgThree.svg"
-          alt="image of multiples brushes"
-        />
-      </motion.div>
-
-      <motion.div style={{y}}>
-        <img
-          src="../src/assets/parallax/imgSeven.svg"
-          alt="image of multiples brushes"
-        />
-        <img
-          src="../src/assets/parallax/imgEight.svg"
-          alt="image of multiples brushes"
-        />
-        <img
-          src="../src/assets/parallax/imgFive.svg"
-          alt="image of multiples brushes"
-        />
-        <img
-          src="../src/assets/parallax/imgNine.svg"
-          alt="image of multiples brushes"
-        />
-        <img
-          src="../src/assets/parallax/imgEight.svg"
+          src="/assets/parallax/imgThree.svg"
           alt="image of multiples brushes"
         />
       </motion.div>
 
       <motion.div style={{y}}>
         <img
-          src="../src/assets/parallax/imgFour.svg"
+          src="/assets/parallax/imgSeven.svg"
           alt="image of multiples brushes"
         />
         <img
-          src="../src/assets/parallax/imgFive.svg"
+          src="/assets/parallax/imgEight.svg"
           alt="image of multiples brushes"
         />
         <img
-          src="../src/assets/parallax/imgSix.svg"
+          src="/assets/parallax/imgFive.svg"
           alt="image of multiples brushes"
         />
         <img
-          src="../src/assets/parallax/imgFive.svg"
+          src="/assets/parallax/imgNine.svg"
           alt="image of multiples brushes"
         />
         <img
-          data-scroll
-          data-scroll-speed="3"
-          src="../src/assets/parallax/imgThree.svg"
+          src="/assets/parallax/imgEight.svg"
+          alt="image of multiples brushes"
+        />
+      </motion.div>
+
+      <motion.div style={{y}}>
+        <img
+          src="/assets/parallax/imgFour.svg"
+          alt="image of multiples brushes"
+        />
+        <img
+          src="/assets/parallax/imgFive.svg"
+          alt="image of multiples brushes"
+        />
+        <img
+          src="/assets/parallax/imgSix.svg"
+          alt="image of multiples brushes"
+        />
+        <img
+          src="/assets/parallax/imgFive.svg"
+          alt="image of multiples brushes"
+        />
+        <img
+          src="/assets/parallax/imgThree.svg"
           alt="image of multiples brushes"
         />
       </motion.div>

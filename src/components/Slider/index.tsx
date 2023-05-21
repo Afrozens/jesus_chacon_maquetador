@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import CardSlider from "../CardSlider";
 import styles from "./Slider.module.css";
 
@@ -48,7 +48,7 @@ const Slider = () => {
           <img src="/arrow-chevron-left.svg" alt="arrow circle left" />
         </button>
         <img
-          src={`../src/assets/slider/${
+          src={`/assets/slider/${
             images[selectedIndex === 0 ? images.length - 1 : selectedIndex - 1]
           }`}
           alt="image album previous"
@@ -56,7 +56,7 @@ const Slider = () => {
         />
         <CardSlider isLoading={isLoading} image={selectedImage} />
         <img
-          src={`../src/assets/slider/${
+          src={`/assets/slider/${
             images[selectedIndex === images.length - 1 ? 0 : selectedIndex + 1]
           }`}
           alt="image album next"

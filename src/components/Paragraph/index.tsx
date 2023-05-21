@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Paragraph.module.css";
 
 const Paragraph = ({children, isCenter}: TextType) => {

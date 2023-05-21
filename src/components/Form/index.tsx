@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/strict-boolean-expressions */
-import React from "react";
 import styles from "./Form.module.css";
 import {useForm} from "react-hook-form";
 import ErrorMsg from "../ErrorMsg";

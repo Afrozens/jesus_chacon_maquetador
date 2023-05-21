@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./CardSlider.module.css";
 interface PropsType {
   image: string;
@@ -9,7 +8,7 @@ const CardSlider = ({image, isLoading}: PropsType) => {
   return (
     <div className={styles.card}>
       <img
-        src={`../src/assets/slider/${image}`}
+        src={`/assets/slider/${image}`}
         alt="image of album of music"
         className={`${isLoading ? "opacity-medium" : "opacity-complete"}`}
       />
