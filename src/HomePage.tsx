@@ -12,9 +12,7 @@ const HomePage = () => {
           className="main-avatar"
         />
         <article>
-          <Title>
-            Disfruta de la <b>mejor música</b>
-          </Title>
+          <Title line="Disfruta de la " lineTwo="mejor música" />
           <Paragraph>
             Accede a tu cuenta para guardar tus albumes favoritos.
           </Paragraph>
@@ -30,7 +28,7 @@ const HomePage = () => {
       </section>
 
       <section className="section-album">
-        <Title isCenter={true}>Los mas escuchados</Title>
+        <Title line="Los mas escuchados" isCenter={true} />
         <Paragraph isCenter={true}>
           Disfruta de tu música a un solo click y descube que discos has
           guardado dentro de “mis álbumes”
@@ -40,9 +38,7 @@ const HomePage = () => {
 
       <footer id="footer" className="footer">
         <article>
-          <Title>
-            Disfruta de la <b>mejor música</b>
-          </Title>
+          <Title line="Disfruta de la " lineTwo="mejor música" />
           <p className="footer-paragraph">
             Escríbenos en el siguiente formulario y un asesor se pondrá en
             contacto contigo.

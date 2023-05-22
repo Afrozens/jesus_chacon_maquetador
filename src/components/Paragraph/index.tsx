@@ -1,13 +1,17 @@
 import styles from "./Paragraph.module.css";
-
-const Paragraph = ({children, isCenter}: TextType) => {
+import {motion} from "framer-motion";
+const Paragraph = ({children, isCenter}: ParagraphType) => {
   return (
-    <p
+    <motion.p
+      initial={{opacity: 0}}
+      whileInView={{opacity: 1}}
+      transition={{duration: 1.5}}
+      viewport={{once: true, amount: 0.8}}
       className={`${styles.paragraph} ${
         isCenter ?? false ? styles.paragraphCenter : styles.paragraphLeft
       }`}>
       {children}
-    </p>
+    </motion.p>
   );
 };
 

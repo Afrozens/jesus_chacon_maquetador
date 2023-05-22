@@ -6,6 +6,14 @@
   font-family: var(--family-montserrat);
 }
 
+.title span {
+  display: inline;
+}
+
+.title b {
+  display: inline;
+}
+
 .titleLeft {
   text-align: start;
 }

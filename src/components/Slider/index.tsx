@@ -1,6 +1,9 @@
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
 import {useState} from "react";
 import CardSlider from "../CardSlider";
 import styles from "./Slider.module.css";
+
+type PreviousOrNext = "next" | "previous" | "wait";
 
 const Slider = () => {
   const images = [
@@ -13,6 +16,8 @@ const Slider = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState(images[0]);
   const [isLoading, setIsLoading] = useState(false);
+  const [isWait, setIsWait] = useState<PreviousOrNext>("wait");
+  // condition for next and previous img of manner dinamic with index of images array
   const selectNewImage = (index: number, images: string[], next = true) => {
     setIsLoading(true);
     const delayAndLogic = setTimeout(() => {
@@ -27,6 +32,7 @@ const Slider = () => {
       setSelectedImage(images[nextIndex]);
       setSelectedIndex(nextIndex);
       setIsLoading(false);
+      setIsWait("wait");
     }, 500);
     return () => {
       clearTimeout(delayAndLogic);
@@ -35,10 +41,12 @@ const Slider = () => {
 
   const previous = () => {
     selectNewImage(selectedIndex, images, false);
+    setIsWait("previous");
   };
 
   const next = () => {
     selectNewImage(selectedIndex, images);
+    setIsWait("next");
   };
 
   return (
@@ -52,7 +60,9 @@ const Slider = () => {
             images[selectedIndex === 0 ? images.length - 1 : selectedIndex - 1]
           }`}
           alt="image album previous"
-          className={styles.imgPrevious}
+          className={`${styles.imgPrevious} ${
+            isWait === "previous" && "opacity-medium"
+          }`}
         />
         <CardSlider isLoading={isLoading} image={selectedImage} />
         <img
@@ -60,7 +70,9 @@ const Slider = () => {
             images[selectedIndex === images.length - 1 ? 0 : selectedIndex + 1]
           }`}
           alt="image album next"
-          className={styles.imgNext}
+          className={`${styles.imgNext} ${
+            isWait === "next" && "opacity-medium"
+          }`}
         />
         <button onClick={next} className={styles.btnPrevious}>
           <img src="/arrow-chevron-right.svg" alt="arrow circle right" />

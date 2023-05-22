@@ -1,4 +1,4 @@
-import {useRef} from "react";
+import {useState, useRef} from "react";
 import styles from "./Parallax.module.css";
 import {useScroll, useTransform, motion} from "framer-motion";
 import type {MotionValue} from "framer-motion";
@@ -8,6 +8,12 @@ const useParallax = (value: MotionValue<number>, distance: number) => {
 };
 
 const Parallax = () => {
+  const [imageLoading, setImageLoading] = useState<boolean>(true);
+
+  const imageLoaded = () => {
+    setImageLoading(false);
+  };
+
   // my ref of html element
   const scrollRef = useRef(null);
   // for the definition of space in my div
@@ -16,7 +22,12 @@ const Parallax = () => {
   const y = useParallax(scrollYProgress, 100);
   return (
     <div className={styles.container} ref={scrollRef}>
-      <motion.div style={{y}}>
+      <motion.div
+        style={{y}}
+        initial={{opacity: 0}}
+        animate={{opacity: imageLoading ? 0 : 1}}
+        transition={{opacity: {delay: 0.5, duration: 0.4}}}
+        onLoad={imageLoaded}>
         <img
           src="/assets/parallax/imgOne.svg"
           alt="image of multiples brushes"
@@ -39,7 +50,12 @@ const Parallax = () => {
         />
       </motion.div>
 
-      <motion.div style={{y}}>
+      <motion.div
+        style={{y}}
+        initial={{opacity: 0}}
+        animate={{opacity: imageLoading ? 0 : 1}}
+        transition={{opacity: {delay: 0.5, duration: 0.4}}}
+        onLoad={imageLoaded}>
         <img
           src="/assets/parallax/imgFour.svg"
           alt="image of multiples brushes"
@@ -62,7 +78,12 @@ const Parallax = () => {
         />
       </motion.div>
 
-      <motion.div style={{y}}>
+      <motion.div
+        style={{y}}
+        initial={{opacity: 0}}
+        animate={{opacity: imageLoading ? 0 : 1}}
+        transition={{opacity: {delay: 0.5, duration: 0.4}}}
+        onLoad={imageLoaded}>
         <img
           src="/assets/parallax/imgSeven.svg"
           alt="image of multiples brushes"
@@ -85,7 +106,12 @@ const Parallax = () => {
         />
       </motion.div>
 
-      <motion.div style={{y}}>
+      <motion.div
+        style={{y}}
+        initial={{opacity: 0}}
+        animate={{opacity: imageLoading ? 0 : 1}}
+        transition={{opacity: {delay: 0.5, duration: 0.4}}}
+        onLoad={imageLoaded}>
         <img
           src="/assets/parallax/imgFour.svg"
           alt="image of multiples brushes"
